@@ -1,7 +1,7 @@
 (library
  (name command_nodejs)
  (public_name command_nodejs)
- (libraries async_kernel core core_kernel.version_util js_of_ocaml)
+ (libraries core core_kernel.version_util js_of_ocaml)
  (preprocess
   (pps ppx_jane js_of_ocaml-ppx)))
 
