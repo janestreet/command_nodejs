@@ -176,10 +176,7 @@ module Command_nodejs = Command.Private.For_unix (struct
       ;;
     end
 
-    module Version_util = struct
-      include Version_util
-      module Time = Time_float
-    end
+    module Version_util = Version_util_compat
   end)
 
 let run = Command_nodejs.run
