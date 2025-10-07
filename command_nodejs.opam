@@ -15,8 +15,8 @@ depends: [
   "core_kernel"
   "ppx_jane"
   "dune"            {>= "3.17.0"}
-  "js_of_ocaml"     {= "6.0.1+jst"}
-  "js_of_ocaml-ppx" {= "6.0.1+jst"}
+  "js_of_ocaml"     {= "6.0.1+ox"}
+  "js_of_ocaml-ppx" {= "6.0.1+ox"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for running [Command.t]s in JS/Wasm executables running on Node."
