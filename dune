@@ -3,7 +3,7 @@
  (public_name command_nodejs)
  (libraries core js_of_ocaml core_kernel.version_util_compat)
  (preprocess
-  (pps ppx_jane js_of_ocaml-ppx)))
+  (pps ppx_jane js_of_ocaml-ppx -compare-require-explicit-locality)))
 
 (rule
  (targets mli.diff-for-review)
